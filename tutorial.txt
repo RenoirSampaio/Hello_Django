@@ -1,0 +1,43 @@
+# Ir para pasta das virtuaislenvs
+-> cd virtuallenvs
+# Criar pasta para desenvolvimento
+-> python -m venv dev_django
+-> cd dev_django
+# Inicializar a vitualenv na pasta dev_django
+-> .\Scripts\activate
+# Instalar django na virtualenv ativada
+-> pip install django
+# Criar projeto
+-> django-admin startproject hello_django
+-> cd hello_django
+# Criar pasta 'core' no projeto
+-> django-admin startapp core
+# Criar servidor
+-> python manage.py runserver
+
+
+# Inicializar a vitualenv na pasta dev_django
+-> cd C:\Users\renoi\OneDrive\Documentos\virtualenvs\dev_django
+-> .\Scripts\activate
+# Ir para pasta onde quer criar o novo projeto
+-> cd C:\Users\renoi\OneDrive\Documentos\virtualenvs\dev_django
+# Criar projeto
+-> django-admin startproject agenda
+-> cd .\agenda\
+# Criar pasta 'core' no projeto
+-> django-admin startapp core
+# Criar servidor
+-> python manage.py runserver
+# Criar tabelas
+-> python manage.py migrate
+# Criar usuário
+-> python manage.py createsuperuser --username admin
+
+
+# Criar migrations no app 'core'
+-> python manage.py makemigrations core
+# Criar sqlmigrations no app 'core'\'0001'
+-> python manage.py sqlmigrate core 0001
+-> python manage.py migrate core 0001
+
+
